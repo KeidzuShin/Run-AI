@@ -1,0 +1,426 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: RunFromPlayerBT
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 241585201953636353
+  nodes:
+  - rid: 241585201953636353
+  - rid: 241585201953636366
+  - rid: 241585201953636367
+  - rid: 241585201953636368
+  - rid: 241585201953636369
+  - rid: 241585201953636370
+  - rid: 241585201953636371
+  - rid: 241585201953636372
+  - rid: 241585201953636374
+  - rid: 241585201953636375
+  - rid: 241585201953636376
+  - rid: 241585201953636377
+  - rid: 241585201953636378
+  - rid: 241585201953636379
+  treeState: 0
+  blackboard:
+    health: 0
+    distanceToPlayer: 0
+    waitTimeRemaining: 0
+    playerInRange: 0
+    GoalReached: 0
+    moveToPosition: {x: 0, y: 0, z: 0}
+    player: {fileID: 0}
+    finish: {fileID: 0}
+    spawn: {fileID: 0}
+    countdownObj: {fileID: 0}
+    enemyBulletObj: {fileID: 0}
+    countdown: {fileID: 0}
+    AISetting: {fileID: 0}
+    AIStats: {fileID: 0}
+  viewPosition: {x: 552, y: 62.4, z: 0}
+  viewScale: {x: 1, y: 1, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 241585201953636353
+      type: {class: RootNode, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 10571a39-e78a-4327-90de-3606276a983c
+        position: {x: 0, y: 0}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Start
+        drawGizmos: 0
+        child:
+          rid: 241585201953636367
+    - rid: 241585201953636366
+      type: {class: AvoidPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 391f8b24558837145951754cf17a563d
+        position: {x: -222.4, y: 620.93005}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        isDestinationReached: 0
+        hasPath: 0
+    - rid: 241585201953636367
+      type: {class: GetBlackboardAndRepeat, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: f34bbe41a608dcb43899002d1b40cfd4
+        position: {x: -18.799988, y: 113.2}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Initialise
+        drawGizmos: 0
+        child:
+          rid: 241585201953636368
+        player: {fileID: 0}
+        spawn: {fileID: 0}
+        finish: {fileID: 0}
+        countdownObj: {fileID: 0}
+        enemyBulletObj: {fileID: 0}
+        countdown: {fileID: 0}
+        AISetting: {fileID: 0}
+        AIStats: {fileID: 0}
+        restartOnSuccess: 1
+        restartOnFailure: 0
+    - rid: 241585201953636368
+      type: {class: InterruptSelector, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 9ee301fdcfc2360499c317a9d96807cb
+        position: {x: 0, y: 232.59999}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Task Order Handler
+        drawGizmos: 0
+        children:
+        - rid: 241585201953636369
+        - rid: 241585201953636370
+        - rid: 241585201953636374
+    - rid: 241585201953636369
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: d872fde5d80b3f44ea6e393d3538a3c1
+        position: {x: -222.4, y: 360.93}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Task Order Handler
+        drawGizmos: 0
+        children:
+        - rid: 241585201953636371
+        - rid: 241585201953636378
+    - rid: 241585201953636370
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: e016e83cdaa37134ea8eb2efa30e1aaf
+        position: {x: -0.0000033111573, y: 360.93}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Task Order Handler
+        drawGizmos: 0
+        children:
+        - rid: 241585201953636377
+        - rid: 241585201953636379
+        - rid: 241585201953636376
+    - rid: 241585201953636371
+      type: {class: isLowHealth, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: c24fa6964ea456745ad49df3898a03d1
+        position: {x: -393.60004, y: 498.53003}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Check NPC Health
+        drawGizmos: 0
+        health: 0
+    - rid: 241585201953636372
+      type: {class: IsWaypointNear, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 2395ba8cf95352c41a93bd70d51b5bd2
+        position: {x: 171.2, y: 608.0001}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Check Target Distance
+        drawGizmos: 0
+    - rid: 241585201953636374
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 5dc96e160104aa14b8a30c43cf16f5ae
+        position: {x: 246.40005, y: 360.93}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        Goal: 1
+        Spawn: 0
+        Player: 0
+    - rid: 241585201953636375
+      type: {class: RegenHealth, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 28372c3f1e26eda4193147f38f55b4a2
+        position: {x: -402.4, y: 620.93005}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+    - rid: 241585201953636376
+      type: {class: AvoidPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 2d889c8aa060b1445b50adb6446f1fee
+        position: {x: 342.40002, y: 498.4}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        isDestinationReached: 0
+        hasPath: 0
+    - rid: 241585201953636377
+      type: {class: PlayerInRange, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 3298d7f003f23e24fb009bc9e5a05ffa
+        position: {x: 0.7999815, y: 499.19998}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Check Player Distance
+        drawGizmos: 0
+    - rid: 241585201953636378
+      type: {class: Parallel, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: cf2b70c19ae92e14396a0b067f78ba82
+        position: {x: -222.4, y: 498.53003}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Task Order Handler
+        drawGizmos: 0
+        children:
+        - rid: 241585201953636375
+        - rid: 241585201953636366
+    - rid: 241585201953636379
+      type: {class: Inverter, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 8525e90ece2dc124494e1c2032a1de81
+        position: {x: 171.2, y: 498.4}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 241585201953636372

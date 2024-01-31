@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396cd55d15aa04942bb2a9ed4fd91fde, type: 3}
+  m_Name: AIGameSetting
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+  fleeSpeed: 5
+  turnSpeed: 200
+  fleeturnSpeed: 999
+  acceleration: 20
+  stoppingDistance: 5
+  angleRange1: 20
+  angleRange2: 160
+  minFleeRange: 10
+  maxFleeRange: 20
+  maxFleeDistance: 30
+  attackDamage: 10
+  attackCooldown: 1
+  attackRange: 10
+  searchRange: 20
+  shootingForce: 40
+  shootingUpwardForce: 1
+  Spread: 0.5

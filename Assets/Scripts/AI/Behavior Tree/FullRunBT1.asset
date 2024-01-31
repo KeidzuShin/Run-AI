@@ -1,0 +1,941 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: FullRunBT1
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 5517172742245056512
+  nodes:
+  - rid: 5517172742245056512
+  - rid: 5517172742245056519
+  - rid: 5517172742245056520
+  - rid: 5517172742245056524
+  - rid: 5517172742245056525
+  - rid: 5517172742245056527
+  - rid: 5517172742245056529
+  - rid: 5517172992883556353
+  - rid: 5517173022075912194
+  - rid: 5517173022075912197
+  - rid: 5517173022075912199
+  - rid: 1428253539816701952
+  - rid: 1428253539816701962
+  - rid: 1428253539816701963
+  - rid: 1428253562538295296
+  - rid: 1428253562538295300
+  - rid: 1428253562538295301
+  - rid: 1428253888631013376
+  - rid: 1428253888631013378
+  - rid: 1428253888631013379
+  - rid: 1428253888631013381
+  - rid: 1428253888631013382
+  - rid: 1428253888631013383
+  - rid: 1428253888631013384
+  - rid: 1428253981070065665
+  - rid: 1428253981070065666
+  - rid: 1428254001111498754
+  - rid: 1428254001111498756
+  - rid: 1428254001111498759
+  - rid: 1428254001111498760
+  - rid: 1428254001111498761
+  - rid: 1428254001111498762
+  - rid: 1428254001111498763
+  treeState: 0
+  blackboard:
+    health: 0
+    distanceToPlayer: 0
+    waitTimeRemaining: 0
+    playerInRange: 0
+    GoalReached: 0
+    moveToPosition: {x: 0, y: 0, z: 0}
+    player: {fileID: 0}
+    finish: {fileID: 0}
+    spawn: {fileID: 0}
+    countdownObj: {fileID: 0}
+    enemyBulletObj: {fileID: 0}
+    countdown: {fileID: 0}
+    AISetting: {fileID: 11400000, guid: 2001bbcebab89c048a0093cb86ba5651, type: 2}
+    AIStats: {fileID: 0}
+  viewPosition: {x: 580.8, y: -120.8, z: 0}
+  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1428253539816701952
+      type: {class: Failure, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 04f7b712f21bf7a4da2dca3e00e68f6b
+        position: {x: 536, y: 628.80005}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Failer in Selector to always resume next task
+        drawGizmos: 0
+        child:
+          rid: 5517172742245056525
+    - rid: 1428253539816701962
+      type: {class: Inverter, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: b348a0a5c9ffbad4485725de0fc250e0
+        position: {x: 48.000023, y: 878.8077}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: If waypoint near then break sequence
+        drawGizmos: 0
+        child:
+          rid: 1428253539816701963
+    - rid: 1428253539816701963
+      type: {class: IsWaypointNear, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 474c2a57fc93c1a4b8bf00260988deb9
+        position: {x: 48.000023, y: 1018.8076}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Is Target Waypoint Near ?
+        drawGizmos: 0
+    - rid: 1428253562538295296
+      type: {class: RandomFailure, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: dcfea62243899b44eb8b5d12dd0e6978
+        position: {x: 203.99997, y: 1018.8076}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Randomly Fails the Sequence
+        drawGizmos: 0
+        chanceOfFailure: 0.2
+    - rid: 1428253562538295300
+      type: {class: Wait, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: b4a1334b7cc4df346bed0ee243376075
+        position: {x: 366.40005, y: 1018.8076}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Wait Before The Next Failure Can Occur
+        drawGizmos: 0
+        timerInSeconds: 1
+    - rid: 1428253562538295301
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 91a85e7896bc5cd42a833eff6b056bd2
+        position: {x: 203.99997, y: 878.8077}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Prevent AI running away from player idling
+        drawGizmos: 0
+        children:
+        - rid: 1428253562538295296
+        - rid: 1428253562538295300
+    - rid: 1428253888631013376
+      type: {class: InterruptSelector, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 7506672eade305445a2f2ccb5f73a99a
+        position: {x: -112.79999, y: 488.80002}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Phase 1. Move to Goal while avoiding player
+        drawGizmos: 0
+        children:
+        - rid: 1428254001111498754
+        - rid: 5517173022075912197
+        - rid: 1428253981070065665
+    - rid: 1428253888631013378
+      type: {class: Parallel, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 445cdeb06723b5a41b1810dab18eb44d
+        position: {x: 205.60005, y: 488.79993}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Wait for Phase Transition
+        drawGizmos: 0
+        children:
+        - rid: 5517173022075912194
+        - rid: 1428253888631013379
+    - rid: 1428253888631013379
+      type: {class: WriteCountdown, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: dad4e98f423359e4d82fe83f8d8c2811
+        position: {x: 366.40002, y: 628.80005}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        endMessage: RUN !
+    - rid: 1428253888631013381
+      type: {class: InterruptSelector, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 65ab574281d40f14a8f894a664dec010
+        position: {x: 536, y: 488.80002}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Phase 2. Move to Spawn while Attacking player
+        drawGizmos: 0
+        children:
+        - rid: 1428253539816701952
+        - rid: 1428253981070065666
+    - rid: 1428253888631013382
+      type: {class: Parallel, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: fb8a38e72f5fd284085b37aa99f0b1cc
+        position: {x: 864.8739, y: 488.80002}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Wait to restart
+        drawGizmos: 0
+        children:
+        - rid: 1428253888631013383
+        - rid: 1428253888631013384
+    - rid: 1428253888631013383
+      type: {class: Wait, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 1fd0ddf4c80acd747ac3dee48335121e
+        position: {x: 864.79987, y: 629.60004}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        timerInSeconds: 5
+    - rid: 1428253888631013384
+      type: {class: WriteCountdown, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 281d488d2e800044b89d88ed1df62a63
+        position: {x: 1025.2, y: 629.60004}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        endMessage: 
+    - rid: 1428253981070065665
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 287f454afe47f9a48858a876dc97c236
+        position: {x: 44, y: 629.6}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Target = Goal
+        drawGizmos: 0
+        Goal: 1
+        Spawn: 0
+        Player: 0
+    - rid: 1428253981070065666
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 2470d79a379c21749a381c9d7e5f8fd8
+        position: {x: 699.2001, y: 629.60004}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Target = Spawn
+        drawGizmos: 0
+        Goal: 0
+        Spawn: 1
+        Player: 0
+    - rid: 1428254001111498754
+      type: {class: Failure, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 7a6a3f5ae0d5088489ffddac509e69c0
+        position: {x: -450.44998, y: 629.60004}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Failer in Selector to always resume next task
+        drawGizmos: 0
+        child:
+          rid: 1428254001111498759
+    - rid: 1428254001111498756
+      type: {class: isLowHealth, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 09f93f62c4b7a2b40a05795f9fcc7849
+        position: {x: -451.20004, y: 880.80023}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        health: 0
+    - rid: 1428254001111498759
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 7229ef7379be8014eb87df028f58817c
+        position: {x: -450.4, y: 748}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: If Health below threshold then Run from player
+        drawGizmos: 0
+        children:
+        - rid: 1428254001111498756
+        - rid: 1428254001111498761
+    - rid: 1428254001111498760
+      type: {class: AvoidPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 161a35692831639428b3f04fc7da11ff
+        position: {x: -198.79999, y: 1160.8}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        isDestinationReached: 0
+        hasPath: 0
+    - rid: 1428254001111498761
+      type: {class: Timeout, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: d7204660cb017f34c96412799a2c7343
+        position: {x: -288, y: 879.2003}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Breaks sequence if regen takes too long
+        drawGizmos: 0
+        child:
+          rid: 1428254001111498762
+        duration: 5
+    - rid: 1428254001111498762
+      type: {class: Parallel, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 8bd65eb3b77d8014a8f99b823fb52a52
+        position: {x: -288.00006, y: 1018.40015}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Regenarate health while running from player
+        drawGizmos: 0
+        children:
+        - rid: 1428254001111498763
+        - rid: 1428254001111498760
+    - rid: 1428254001111498763
+      type: {class: RegenHealth, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: fc3661a52b275c2488e64edf75512ddf
+        position: {x: -363.20007, y: 1160.8003}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+    - rid: 5517172742245056512
+      type: {class: RootNode, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 4101ea6d-4ab3-40f4-b04b-67ed2c5b7bb9
+        position: {x: 366.59998, y: 150}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Start
+        drawGizmos: 0
+        child:
+          rid: 5517173022075912199
+    - rid: 5517172742245056519
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 828d6d6b93672904dbc0b6cb6b363dd5
+        position: {x: -112.79999, y: 748}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Avoid Player On Sight
+        drawGizmos: 0
+        children:
+        - rid: 5517172742245056520
+        - rid: 1428253539816701962
+        - rid: 1428253562538295301
+        - rid: 5517172742245056524
+    - rid: 5517172742245056520
+      type: {class: PlayerInRange, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: e0aed547ed496a841b9ac99dc362c6f6
+        position: {x: -112.80004, y: 878.8077}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Is Player In Range ?
+        drawGizmos: 0
+    - rid: 5517172742245056524
+      type: {class: AvoidPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 3e9026f41adb520489939be767d39227
+        position: {x: 367.19998, y: 878.8077}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Flee from player
+        drawGizmos: 0
+        isDestinationReached: 1
+        hasPath: 0
+    - rid: 5517172742245056525
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: b65fae5fd72186743b5269b512445b85
+        position: {x: 536.00006, y: 748}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Chase and Attack Player on sight
+        drawGizmos: 0
+        children:
+        - rid: 5517172742245056527
+        - rid: 5517172742245056529
+    - rid: 5517172742245056527
+      type: {class: PlayerInRange, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: e7485c33da7d3b9418ff6aad60b0793a
+        position: {x: 536, y: 895.2}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Is Player In Range ?
+        drawGizmos: 0
+    - rid: 5517172742245056529
+      type: {class: AttackPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 1601827f34d02244bbca138de9fbf2ea
+        position: {x: 699.2, y: 895.2}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Stop moving while attacking
+        drawGizmos: 0
+        AIStats: {fileID: 0}
+    - rid: 5517172992883556353
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 2919cc77bf93f8a489ca0ed7baaba57d
+        position: {x: 366.59998, y: 358}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Sequence Phase
+        drawGizmos: 0
+        children:
+        - rid: 1428253888631013376
+        - rid: 1428253888631013378
+        - rid: 1428253888631013381
+        - rid: 1428253888631013382
+    - rid: 5517173022075912194
+      type: {class: Wait, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 2271804ea58d09841990fe7cbaad634b
+        position: {x: 205.79999, y: 630}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        timerInSeconds: 5
+    - rid: 5517173022075912197
+      type: {class: Failure, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: db74a57dd239a3b428a50c402e6a95d6
+        position: {x: -112.79999, y: 629.60004}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Failer in Selector to always resume next task
+        drawGizmos: 0
+        child:
+          rid: 5517172742245056519
+    - rid: 5517173022075912199
+      type: {class: GetBlackboardAndRepeat, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: c6934aa57a6e41743b7209f6aef8632b
+        position: {x: 348, y: 244.79997}
+        blackboard:
+          health: 0
+          distanceToPlayer: 0
+          waitTimeRemaining: 0
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          countdownObj: {fileID: 0}
+          enemyBulletObj: {fileID: 0}
+          countdown: {fileID: 0}
+          AISetting: {fileID: 0}
+          AIStats: {fileID: 0}
+        description: Get References and do Repeat (Debug Only)
+        drawGizmos: 0
+        child:
+          rid: 5517172992883556353
+        player: {fileID: 0}
+        spawn: {fileID: 0}
+        finish: {fileID: 0}
+        countdownObj: {fileID: 0}
+        enemyBulletObj: {fileID: 0}
+        countdown: {fileID: 0}
+        AISetting: {fileID: 0}
+        AIStats: {fileID: 0}
+        restartOnSuccess: 1
+        restartOnFailure: 1

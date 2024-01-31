@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: AI Patrol
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 5517172586801004548
+  nodes:
+  - rid: 5517172586801004548
+  - rid: 5517172699776155649
+  - rid: 5517172699776155650
+  - rid: 5517172699776155651
+  - rid: 5517172699776155652
+  - rid: 5517172699776155653
+  - rid: 5517172699776155654
+  treeState: 0
+  blackboard:
+    playerInRange: 0
+    GoalReached: 0
+    moveToPosition: {x: 0, y: 0, z: 0}
+    player: {fileID: 0}
+    finish: {fileID: 0}
+    spawn: {fileID: 0}
+    agentObj: {fileID: 0}
+    agent: {fileID: 0}
+    AISetting: {fileID: 0}
+  viewPosition: {x: 157.6, y: 42.4, z: 0}
+  viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5517172586801004548
+      type: {class: RootNode, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: f74e3074-ad16-46fa-a680-1401d9b94acc
+        position: {x: 0, y: 0}
+        blackboard:
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          agentObj: {fileID: 0}
+          agent: {fileID: 0}
+          AISetting: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 5517172699776155649
+    - rid: 5517172699776155649
+      type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: dc356857d78e9844e8a7ff662cdd276a
+        position: {x: 0, y: 108.79999}
+        blackboard:
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          agentObj: {fileID: 0}
+          agent: {fileID: 0}
+          AISetting: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 5517172699776155650
+        restartOnSuccess: 1
+        restartOnFailure: 0
+    - rid: 5517172699776155650
+      type: {class: Selector, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: e1039efd9f94eb24c94e9fb182465014
+        position: {x: 0, y: 246.6}
+        blackboard:
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          agentObj: {fileID: 0}
+          agent: {fileID: 0}
+          AISetting: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 5517172699776155654
+    - rid: 5517172699776155651
+      type: {class: Wait, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 57f1d7f516bda3d428c26b3b82b8512d
+        position: {x: -95.200005, y: 671.6748}
+        blackboard:
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          agentObj: {fileID: 0}
+          agent: {fileID: 0}
+          AISetting: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        duration: 1
+    - rid: 5517172699776155652
+      type: {class: RandomPosition, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 11e684f328a5c934f9c41f2f0145aa4c
+        position: {x: 94.40007, y: 618.0747}
+        blackboard:
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          agentObj: {fileID: 0}
+          agent: {fileID: 0}
+          AISetting: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        min: {x: -10, y: -10}
+        max: {x: 10, y: 10}
+    - rid: 5517172699776155653
+      type: {class: MoveToPosition, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 41ed4a992e8ca634483b51620337a8d4
+        position: {x: 276, y: 586.07477}
+        blackboard:
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          agentObj: {fileID: 0}
+          agent: {fileID: 0}
+          AISetting: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        speed: 5
+        stoppingDistance: 0.1
+        updateRotation: 1
+        acceleration: 40
+        tolerance: 1
+    - rid: 5517172699776155654
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 5ed0e6740a94b0647aac4cabdbc419ac
+        position: {x: 0.0000076293945, y: 387.67474}
+        blackboard:
+          playerInRange: 0
+          GoalReached: 0
+          moveToPosition: {x: 0, y: 0, z: 0}
+          player: {fileID: 0}
+          finish: {fileID: 0}
+          spawn: {fileID: 0}
+          agentObj: {fileID: 0}
+          agent: {fileID: 0}
+          AISetting: {fileID: 0}
+        description: WalkAround
+        drawGizmos: 0
+        children:
+        - rid: 5517172699776155651
+        - rid: 5517172699776155652
+        - rid: 5517172699776155653
