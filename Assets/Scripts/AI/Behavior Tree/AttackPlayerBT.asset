@@ -43,8 +43,8 @@ MonoBehaviour:
     countdown: {fileID: 0}
     AISetting: {fileID: 0}
     AIStats: {fileID: 0}
-  viewPosition: {x: 581.6, y: 36.8, z: 0}
-  viewScale: {x: 1, y: 1, z: 1}
+  viewPosition: {x: 336, y: 60, z: 0}
+  viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
   references:
     version: 2
     RefIds:
@@ -80,7 +80,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: f6f4f0b0e815ae64d885912da7d56dc9
-        position: {x: 94, y: 498.4}
+        position: {x: 92.72084, y: 496.72086}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 8981d1df5f3496b4da3a60b657559ef5
-        position: {x: -286.465, y: 635.2}
+        position: {x: -287.99994, y: 632.8}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -124,14 +124,14 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         isDestinationReached: 0
-        hasPath: 0
+        hasRunPath: 0
     - rid: 241585201953636356
       type: {class: RegenHealth, ns: , asm: Assembly-CSharp}
       data:
         state: 0
         started: 0
         guid: b140748798270124cb1421acf3a0b7d5
-        position: {x: -460.865, y: 635.2}
+        position: {x: -462.4791, y: 633.5209}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 06a2877ca2d5d6744bd200e4ff038f4f
-        position: {x: -19.200012, y: 115.79999}
+        position: {x: -20.879166, y: 113.52088}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: f6f4c278ba6880d40b62375961c44fa1
-        position: {x: -444.865, y: 498.40002}
+        position: {x: -462.40002, y: 495.99997}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: e7483fa02b532c9458df17ad09c30fab
-        position: {x: 244, y: 367.19998}
+        position: {x: 242.32086, y: 365.52087}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 9f8ffb0a3f453464089ed063a7928516
-        position: {x: -0.000061035156, y: 238.4}
+        position: {x: 0.00002670288, y: 233.9165}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 6fa4b09ccd3929c4fb7fbe8d9a00018b
-        position: {x: -286.465, y: 367.19998}
+        position: {x: -288.07913, y: 365.52087}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: c97d88eab9c625c409e6ad7f1ea7bd5e
-        position: {x: -286.465, y: 498.40002}
+        position: {x: -288.07913, y: 496.72086}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 8ad382dca3872ce4da0a6e0be5d82f79
-        position: {x: 0, y: 367.19998}
+        position: {x: 0.00011956692, y: 364.8}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 11e892a0e8150fe4f875255fa6c6c3e7
-        position: {x: -85.20004, y: 498.4}
+        position: {x: -86.47915, y: 496.72086}
         blackboard:
           health: 0
           distanceToPlayer: 0

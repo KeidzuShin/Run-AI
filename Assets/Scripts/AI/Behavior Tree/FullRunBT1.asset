@@ -64,8 +64,8 @@ MonoBehaviour:
     countdown: {fileID: 0}
     AISetting: {fileID: 11400000, guid: 2001bbcebab89c048a0093cb86ba5651, type: 2}
     AIStats: {fileID: 0}
-  viewPosition: {x: 580.8, y: -120.8, z: 0}
-  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+  viewPosition: {x: 202.4, y: -9.6, z: 0}
+  viewScale: {x: 0.43232757, y: 0.43232757, z: 1}
   references:
     version: 2
     RefIds:
@@ -544,7 +544,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 161a35692831639428b3f04fc7da11ff
-        position: {x: -198.79999, y: 1160.8}
+        position: {x: -210.4, y: 1162.4}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -563,14 +563,14 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         isDestinationReached: 0
-        hasPath: 0
+        hasRunPath: 0
     - rid: 1428254001111498761
       type: {class: Timeout, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
         state: 0
         started: 0
         guid: d7204660cb017f34c96412799a2c7343
-        position: {x: -288, y: 879.2003}
+        position: {x: -300, y: 880.8}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 8bd65eb3b77d8014a8f99b823fb52a52
-        position: {x: -288.00006, y: 1018.40015}
+        position: {x: -300, y: 1019.99994}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: fc3661a52b275c2488e64edf75512ddf
-        position: {x: -363.20007, y: 1160.8003}
+        position: {x: -375.19998, y: 1162.4}
         blackboard:
           health: 0
           distanceToPlayer: 0
@@ -746,7 +746,7 @@ MonoBehaviour:
         description: Flee from player
         drawGizmos: 0
         isDestinationReached: 1
-        hasPath: 0
+        hasRunPath: 0
     - rid: 5517172742245056525
       type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:

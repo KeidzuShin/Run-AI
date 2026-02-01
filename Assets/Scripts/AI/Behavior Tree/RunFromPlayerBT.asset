@@ -45,8 +45,8 @@ MonoBehaviour:
     countdown: {fileID: 0}
     AISetting: {fileID: 0}
     AIStats: {fileID: 0}
-  viewPosition: {x: 552, y: 62.4, z: 0}
-  viewScale: {x: 1, y: 1, z: 1}
+  viewPosition: {x: 320.8, y: 32, z: 0}
+  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
   references:
     version: 2
     RefIds:
@@ -101,7 +101,7 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         isDestinationReached: 0
-        hasPath: 0
+        hasRunPath: 0
     - rid: 241585201953636367
       type: {class: GetBlackboardAndRepeat, ns: , asm: Assembly-CSharp}
       data:
@@ -346,7 +346,7 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         isDestinationReached: 0
-        hasPath: 0
+        hasRunPath: 0
     - rid: 241585201953636377
       type: {class: PlayerInRange, ns: , asm: Assembly-CSharp}
       data:
